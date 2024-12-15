@@ -1,0 +1,14 @@
+site:
+  title: "SwitchKobweb"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/switchkobweb.js"
+      api: "build/libs/switchkobweb.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/switchkobweb.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
